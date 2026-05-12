@@ -1,7 +1,7 @@
 
 services:
   api-gateway:
-    build: /home/chris/production-system/gateway-code
+    build: .
     container_name: api-gateway
     restart: unless-stopped
     networks:
