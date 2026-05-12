@@ -11,3 +11,7 @@ services:
   - name: "Payment Service"
     path: "/payment-svc"
     target: "http://payment-service:8003"
+
+  - name: "Auto Tools"
+    path: "/auto-tools"
+    target: "http://auto_tools_web:8000"
