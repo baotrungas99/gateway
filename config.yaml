@@ -1,0 +1,13 @@
+port: "80"
+services:
+  - name: "AI Service"
+    path: "/ai-svc"
+    target: "http://ai-service:8001"
+  
+  - name: "User Service"
+    path: "/user-svc"
+    target: "http://user-service:8002"
+  
+  - name: "Payment Service"
+    path: "/payment-svc"
+    target: "http://payment-service:8003"

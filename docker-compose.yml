@@ -1,0 +1,15 @@
+
+services:
+  api-gateway:
+    build: /home/chris/production-system/gateway-code
+    container_name: api-gateway
+    restart: unless-stopped
+    networks:
+      - edge_net    # nhận traffic từ nginx
+      - data_net    # forward tới backend services
+
+networks:
+  edge_net:
+    external: true
+  data_net:
+    external: true
